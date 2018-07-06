@@ -17,7 +17,7 @@ const config = {
                 use: {
                     loader: 'babel-loader',
                     query: {
-                        presets: ['env', 'stage-0', 'react', 'es3'],
+                        presets: ['env', 'react'],
                     },
                 },
             }
@@ -44,8 +44,8 @@ const config = {
             comments: false,
         }),
         new HtmlWebpackPlugin({
-            filename: '/Users/xiexing/react/webcontent/projects/demo/dest/asset.js',
-            template: '/Users/xiexing/react/webcontent/asset.ejs',
+            filename: path.join(__dirname, '../webcontent/projects','demo/dest/asset.js'),
+            template: path.join(__dirname,'../webcontent/asset.ejs'),
             inject: false,
         }),
     ],
