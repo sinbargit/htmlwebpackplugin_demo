@@ -1,11 +1,14 @@
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 const config = {
-    entry: {},
-    output: {},
-    watch: true,
+    entry: {client: path.join(__dirname, '../webcontent/projects','demo/client.js')},
+    output: {
+        'publicPath': '//gamestatic.iqiyi.com/game/react/resource/demo',
+        'path': path.join(__dirname, '../resource/demo'),
+        'filename': '[name]-[hash:6].js',
+    },
     watchOptions: {
         ignored: /node_modules/,
         aggregateTimeout: 300,
@@ -24,57 +27,12 @@ const config = {
                         presets: ['env', 'stage-0', 'react', 'es3'],
                     },
                 },
-            },
-            {
-                enforce: 'post',
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'es3ify-loader',
-                },
-            },
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '/__static/[name]-[hash].[ext]',
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.css$/, use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader',
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                plugins:[]
-                            }
-                        }],
-                }),
-            },
+            }
         ],
     },
     plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-                BROWSER: JSON.stringify(true),
-            },
-        }),
-        new ExtractTextPlugin('styles.css'),
-        new LiveReloadPlugin({
-            ignore: 'node_modules',
-        }),
-    ],
-};
-const production = {
-    watch: false,
-    plugins: [
         new webpack.optimize.UglifyJsPlugin({
-            exclude:'/(node_modules)/',
+            exclude: '/(node_modules)/',
             compress: {
                 unused: true,
                 drop_console: false,
@@ -92,13 +50,14 @@ const production = {
             },
             comments: false,
         }),
-        new webpack.DefinePlugin({
-            'process.env': {
-                BROWSER: JSON.stringify(true),
-            },
-        }),
         new ExtractTextPlugin('styles.css'),
+        new HtmlWebpackPlugin({
+            filename: '/Users/xiexing/react/webcontent/projects/demo/dest/asset.js',
+            template: '/Users/xiexing/react/webcontent/asset.ejs',
+            inject: false,
+        }),
     ],
-};
-process.env.NODE_ENV === 'production' && Object.assign(config, production);
-module.exports = config;
+}
+
+
+module.exports = config

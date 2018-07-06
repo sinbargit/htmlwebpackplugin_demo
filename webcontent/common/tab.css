@@ -1,6 +1,0 @@
-.tab-menu{text-align: center;}
-.tab-menu span{display: inline-block; width: 30%; margin-right: 1%; background: #ccc; cursor: pointer}
-.tab-menu .on{background: #999}
-
-.tab-content .content{border:1px solid red; display: none}
-.tab-content .on{display: block}
