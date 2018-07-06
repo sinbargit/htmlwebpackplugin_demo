@@ -1,0 +1,59 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre,fieldset, lengend, button, input, textarea,th, td {margin:0;padding:0}
+button, input, select, textarea {font:12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif}
+h4, h5, h6{font-size:100%}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre,fieldset, lengend, button, input, textarea,th, td {margin:0;padding:0}
+button, input, select, textarea {font:12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif}
+address, cite, dfn, em, var, i { font-style:normal;}
+code, kbd, pre, samp, tt { font-family:"Courier New", Courier, monospace;}
+ul, ol { list-style:none}
+a {text-decoration:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+a:hover { text-decoration:none}
+q:before, q:after { content:'';}
+legend { color:#000;}
+fieldset, img { border:none;}
+button, input, select, textarea {font-size:100%}
+table {border-collapse:collapse;border-spacing:0}
+hr {border:none;height:1px}
+p, a, li,span{font-size: 0.24rem;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
+body{font:12px/1.5 'Microsoft Yahei', simsun, Arial, Tahoma;background:#000;background-repeat: no-repeat;background-position: top;background-size: cover;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body *{max-height:999999px}
+img{width: 100%;height: auto;display: block;padding: 0;margin: 0}
+.clearfix:after{content: "";clear: both;display: block;}
+body{margin: 0 auto;background:#0a1c2f;font-size:0.24rem;height:auto}
+
+/*20180317*/
+.bg{ position:absolute;left:0;top:0;width:100%;z-index:0}
+.bg_01{ height:17.24rem}
+.bg_02{ min-height:5rem}
+
+
+.main{margin-top:19.3rem;position:relative;z-index:1}
+.video-con{position:absolute;top:11.3rem;left:0;padding:0 .24rem;height:2.7rem}
+.video-btn{float:left;width:4.37rem;height:2.7rem;}
+.video-link{float:left;width:1.55rem;height:2.25rem;padding-top:.45rem}
+.video-link li{float:left;width:.45rem;height:.4rem;margin:0 0 .04rem .05rem}
+.video-link li a{display:inline-block;width:100%;height:100%}
+.video-link .video-more-btn{width:.92rem}
+
+.tab-box{margin-top:5.3rem}
+.tab-menu span{width:33%;background:none;margin-right:0}
+.tab-menu .on{transform: translate(0,-0.1rem);background:none}
+.tab-content ul{margin:.1rem .15rem}
+.tab-content li{padding-right:1.5rem;color:#a8c1d4;height:.45rem;line-height:.45rem;font-size:.18rem;position:relative;overflow:hidden}
+.tab-content li a{display:inline-block;width:100%;color:#a8c1d4;font-size:.2rem}
+.tab-content li i{position:absolute;right:0;top:0;width:1.2rem;height:.45rem;overflow:hidden}
+.tab-content .content{border:none}
+.tab-content .content .more-btn{padding-right:0;margin:.15rem auto .4rem}
+.tab-content .content .more-btn a{display:block;width:1.5rem;text-align:center;line-height:.5rem;height:.5rem;margin:0 auto}
+
+.fla_bg{position:fixed;bottom:0;left:0;width:100%;height:1.16rem;z-index:2}
+.fla_bg a{display:inline-block;width:33%;height:.8rem;margin:.14rem 0 0 .67rem;text-indent:-9999px}
+.fla_bg .game-lt{margin-left:.9rem}
+
+.foot{margin-bottom:.9rem}
+
+.modal-box{position:fixed}
+.modal{width:6rem;background:none}
+.close{top:-.4rem;color:#fff}

@@ -1,0 +1,4 @@
+{
+	"/demo": {"name":"demo/template.js","desc":"react + redux 服务端渲染demo"},
+	"/test": {"name":"test/dest/template.html","desc":"前端组件库"}
+}

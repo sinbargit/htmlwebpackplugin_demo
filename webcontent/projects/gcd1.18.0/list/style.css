@@ -1,0 +1,45 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre,fieldset, lengend, button, input, textarea,th, td {margin:0;padding:0}
+button, input, select, textarea {font:12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif}
+h4, h5, h6{font-size:100%}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li,pre,fieldset, lengend, button, input, textarea,th, td {margin:0;padding:0}
+button, input, select, textarea {font:12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif}
+address, cite, dfn, em, var, i { font-style:normal;}
+code, kbd, pre, samp, tt { font-family:"Courier New", Courier, monospace;}
+ul, ol { list-style:none}
+a {text-decoration:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+a:hover { text-decoration:none}
+q:before, q:after { content:'';}
+legend { color:#000;}
+fieldset, img { border:none;}
+button, input, select, textarea {font-size:100%}
+table {border-collapse:collapse;border-spacing:0}
+hr {border:none;height:1px}
+p, a, li,span{font-size: 0.24rem;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
+body{font:12px/1.5 'Microsoft Yahei', simsun, Arial, Tahoma;background:#000;background-repeat: no-repeat;background-position: top;background-size: cover;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body *{max-height:999999px}
+img{width: 100%;height: auto;display: block;padding: 0;margin: 0}
+.clearfix:after{content: "";clear: both;display: block;}
+body{margin: 0 auto;background: #fff;font-size: 0.24rem;height:auto}
+
+.list-main{background:url(../img/list-bg.jpg) repeat-y;background-size:100% auto}
+.list-main .tab-menu{margin:.2rem 0}
+.list-main .tab-box{margin:2.7rem 0 0 0}
+.back{z-index:2;display: block;width: 1.36rem;height: 0.6rem;background:url(../img/back.png) no-repeat;background-size:100%;position: absolute;top: 1.39rem;left: 0.44rem;}
+.list-title{width: 2.6rem;height: 0.6rem;position: relative;left: 1.8rem;top: 2.3rem;font-size:.4rem;color:#095a6e;text-align:center;font-weight:600}
+.tab-box{margin: 1rem 0 1rem 0}
+.news-list{margin:0 .45rem}
+.news-list .sub-title{display:none}
+.news-list li{position:relative}
+.news-list li .news-title{display:inline-block;width:70%;color:#4d4d4d;font-size:.2rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.news-list li .publish-time{position:absolute;right:.1rem;top:0;color:#979797;font-size:.18rem}
+.news-list li .label{position:absolute;left:0;top:0;display:none}
+
+.pagination{padding:.3rem 0 .5rem 0}
+.pagination span{margin:0 .05rem}
+.tab-content .content{border:none}
+.pagination .on{display:inline}
+
+.tab-menu span{width:1.76rem;height:.46rem;line-height:.46rem;background:#816032;color:#fff;font-size:.26rem}
+.tab-menu span.on{background:#325b68}
