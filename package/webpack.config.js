@@ -1,5 +1,3 @@
-const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const config = {
@@ -9,14 +7,8 @@ const config = {
         'path': path.join(__dirname, '../resource/demo'),
         'filename': '[name]-[hash:6].js',
     },
-    watchOptions: {
-        ignored: /node_modules/,
-        aggregateTimeout: 300,
-        poll: 1000,
-    },
     module: {
         rules: [
-            {test: /\.json$/, use: {loader: 'json-loader'}},
             {
                 enforce: 'pre',
                 test: /\.js$/,
@@ -50,7 +42,6 @@ const config = {
             },
             comments: false,
         }),
-        new ExtractTextPlugin('styles.css'),
         new HtmlWebpackPlugin({
             filename: '/Users/xiexing/react/webcontent/projects/demo/dest/asset.js',
             template: '/Users/xiexing/react/webcontent/asset.ejs',
